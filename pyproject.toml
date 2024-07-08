@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pyunwebui"
+version = "0.1.0"
+description = ""
+authors = ["Xu Siyuan <inqb@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.0.0"
+attrs = "^23.2.0"
+cattrs = "^23.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+aiohttp = {extras = ["speedups"], version = "^3.9.5"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.extras]
+aiohttp = ["aiohttp"]
+
